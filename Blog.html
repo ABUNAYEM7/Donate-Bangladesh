@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- fevicon-link -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- DaisyUI-CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <!-- Google-Font-Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <!-- Font-Awesome-CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- talwind-customization-CODE -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily :{
+                    'lexend' :['lexend']
+                },
+              colors: {
+                clifford: '#da373d',
+                Highlighter: '#B4F461',
+                primary: '#111111',
+                secondary: '#111111B2',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-lexend text-secondary">
+    <!-- header-section -->
+    <header class="max-w-[1440px] bg-[#F9F7F3] mx-auto">
+        <nav class="max-w-screen-xl mx-auto lg:py-8 lg:px-5 py-6 px-3">
+            <div class="navbar">
+                <!-- Button-container -->
+                <div class="navbar-start">
+                <button id="homeBtn" class="text-primary rounded-lg text-xl font-semibold bg-Highlighter px-8 py-3 hover:bg-primary hover:text-Highlighter transition-colors duration-200 ease-in-out">Home</button>
+                </div>
+                <!-- Logo-container -->
+                <div class="navbar-center hidden md:block">
+                    <!-- logo-content -->
+                <div class="flex items-center justify-center gap-4">
+                    <a href="#">
+                        <img src="./assets/logo.png" alt="Brand-Logo">
+                    </a>
+                    <a href="#">
+                        <span class="text-primary text-xl font-bold">Donate Bangladesh</span>
+                    </a>
+                </div>
+                </div>
+                <!-- Balacne-container -->
+                <div class="navbar-end items-center gap-2">
+                <img src="./assets/coin.png" alt="Balance-Icon">
+                <h3 class="flex items-center gap-2">
+                    <span class="text-xl font-semibold text-primary">***</span>
+                    <span class="text-xl font-semibold text-primary">BDT</span>
+                </h3>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main-section -->
+    <main class="max-w-screen-xl mx-auto my-8 p-4 ">
+    <section>
+        <h3 class="text-4xl text-primary font-bold my-4">Importanat FAQ <i class="fa-regular fa-circle-question text-4xl font-bold animate-bounce"></i></h3>
+        <!-- accordian-container -->
+        <div>
+            <!-- accordian-container -->
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)</div>
+            <div class="collapse-content">
+            <p>
+                DOM (Document Object Model) is a programming interface for web documents, representing the structure of a webpage.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select element from dom</div>
+            <div class="collapse-content">
+            <p>
+                Select DOM elements using getElementById, getElementsByClassName, getElementsByTagName, querySelector, or querySelectorAll.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">what is event delegation in the context of DOM, and why it is useful</div>
+            <div class="collapse-content">
+            <p>Event delegation attaches a single event listener to a parent element, handling events for child elements. It's useful for improving performance, managing dynamic content, and simplifying code.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using DOM</div>
+            <div class="collapse-content">
+            <p>Manipulate attributes with element.setAttribute() and styles with element.style.propertyName = 'value'.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    </main>
+    <!-- Java-script-Link -->
+    <script src="./js/blog.js"></script>
+</body>
+</html>
