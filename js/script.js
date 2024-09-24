@@ -13,6 +13,8 @@ function getInText(id){
 blogBtn.addEventListener('click',function(){
     window.location.href='./Blog.html'
 })
+// declare-variable
+const footerSection = getID('footerSection')
 
 // // donate-button-eventListener
 
@@ -21,6 +23,8 @@ donateBTN.addEventListener('click',function(){
     historyBtn.classList.remove('bg-Highlighter')
     cardSection.classList.remove('hidden')
     historySection.classList.add('hidden')
+    footerSection.classList.remove('hidden')
+
 })
 
 
@@ -30,6 +34,7 @@ historyBtn.addEventListener('click',function(){
     donateBTN.classList.remove('bg-Highlighter')
     cardSection.classList.add('hidden')
     historySection.classList.remove('hidden')
+    footerSection.classList.add('hidden')
 })
 
 
